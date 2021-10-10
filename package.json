@@ -1,0 +1,39 @@
+{
+  "name": "use-request-animation-frame",
+  "version": "0.1.0",
+  "description": "React hook for easy and performant access to requestAnimationFrame browser API",
+  "author": "layonez",
+  "license": "Apache-2.0",
+  "repository": "layonez/use-request-animation-frame",
+  "main": "dist/index.js",
+  "engines": {
+    "node": ">=8",
+    "npm": ">=5"
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "start": "rollup -c -w"
+  },
+  "dependencies": {},
+  "peerDependencies": {
+    "react": ">= 16.8.0 < 2"
+  },
+  "devDependencies": {
+    "@types/react": "^17.0.27",
+    "babel-core": "^6.26.3",
+    "babel-runtime": "^6.26.0",
+    "react": "^17.0.2",
+    "rollup": "^2.58.0",
+    "rollup-plugin-typescript2": "^0.30.0",
+    "typescript": "^4.4.3"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "react",
+    "typescript",
+    "npm",
+    "requestAnimationFrame"
+  ]
+}
