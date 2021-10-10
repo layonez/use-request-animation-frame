@@ -1,6 +1,6 @@
 {
   "name": "use-request-animation-frame",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "React hook for easy and performant access to requestAnimationFrame browser API",
   "author": "layonez",
   "license": "Apache-2.0",
