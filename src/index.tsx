@@ -16,6 +16,13 @@ const useRequestAnimationFrame = (
   nextAnimationFrameHandler: (progress: number) => void,
   { duration = Number.POSITIVE_INFINITY, shouldAnimate = true }: Config
 ) => {
+  const isServerSideOrApiUnsupported =
+    typeof requestAnimationFrame === 'undefined' ||
+    typeof window === 'undefined'
+  if (isServerSideOrApiUnsupported) {
+    return
+  }
+
   const frame = React.useRef(0)
   const firstFrameTime = React.useRef(performance.now())
 
